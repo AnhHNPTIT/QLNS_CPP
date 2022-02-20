@@ -61,9 +61,9 @@ class tienluong
 		{
 			os<<"\n<================| THONG TIN LUONG |================>"<<endl;
 			os<<tl.manv<<setw(20);
-			os<<tl.luong_cung<<".000"<<setw(10)<<tl.phucap<<".000"<<setw(10);
-			os<<tl.chamcong<<setw(5)<<tl.luong_thucte<<".000"<<setw(10);
-			os<<tl.baohiem<<".000"<<setw(20)<<tl.luongthang()<<".000"<<endl;
+			os<<setprecision(20)<<tl.luong_cung<<setw(20)<<setprecision(20)<<tl.phucap<<setw(20);
+			os<<tl.chamcong<<setw(5)<<setprecision(20)<<tl.luong_thucte<<setw(20);
+			os<<setprecision(20)<<tl.baohiem<<setw(20)<<setprecision(20)<<tl.luongthang()<<endl;
 			os<<endl;
 			return os;
 		}
